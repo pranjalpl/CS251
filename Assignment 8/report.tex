@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[capposition=top]{floatrow}
+\usepackage{graphics}
+\title{Report}
+\date{}
+\author{Pranjal Pratik Lal}
+\begin{document}
+\maketitle
+\begin{figure}
+ \caption{Number of Elements vs Execution Time for each sample of 1 Thread}
+ \includegraphics{scatter1.eps}
+ \floatfoot{For Small input size the execution time of single thread is better than that of Multithread but it increases for large input.}
+ \end{figure}
+
+\begin{figure}
+ \caption{Number of Elements vs Execution Time for each sample of 2 Threads}
+ \includegraphics{scatter2.eps}
+  \floatfoot{For Small input size the execution time of 2 threaded is same as that of Single thread but it performs slightly better for large input.}
+ \end{figure}
+
+\begin{figure}
+ \caption{Number of Elements vs Execution Time for each sample of 4 Threads}
+ \includegraphics{scatter3.eps}
+  \floatfoot{For Small input size 4 threads perform worse than single and double threads but performs significantly better for large inputs.}
+ \end{figure}
+ 
+\begin{figure}
+ \caption{Number of Elements vs Execution Time for each sample of 8 Threads}
+ \includegraphics{scatter4.eps}
+  \floatfoot{For Small input size 8 threads perform worse than single threads and for large inputs it performs worse than 4 threads.}
+ \end{figure} 
+
+\begin{figure}
+ \caption{Number of Elements vs Execution Time for each sample of 16 Threads}
+ \includegraphics{scatter5.eps}
+  \floatfoot{Performance for 16 threads is almost same as performance for 8 threads.}
+ \end{figure}
+
+\begin{figure}
+ \caption{Number of Elements vs Average Execution Time for each Number of Threads}
+ \includegraphics{avg.eps}
+  \floatfoot{For Larger number of threads the growth of execution time is slower, but it is best for 4 Threads.}
+ \end{figure}
+
+ \begin{figure}
+ \caption{Average Speedup for each Thread Configuration}
+ \includegraphics{speedup.eps}
+  \floatfoot{Speedup is greater for greater Number of Elements.}
+ \end{figure}
+
+ \begin{figure}
+ \caption{Variance of 100 Samples for each Thread Configuration}
+ \includegraphics{error.eps}
+  \floatfoot{Error is greater for greater Number of Elements.}
+ \end{figure}
+\end{document}

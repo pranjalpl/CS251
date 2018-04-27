@@ -1,0 +1,14 @@
+<dir>
+	<name> src </name>
+	<file>
+		<name> hello.c </name>
+		<size> 654 </size>
+	</file>
+</dir>
+<dir>
+	<name> l1 </name>
+	<file>
+		<name> bye.c </name>
+		<size> 6400 </size>
+	</file>
+</dir>
